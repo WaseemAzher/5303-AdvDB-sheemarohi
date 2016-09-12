@@ -20,9 +20,9 @@ CREATE TABLE IF NOT EXISTS `gift_options` (
 ```
 CREATE TABLE IF NOT EXISTS `image_entities` (
   `itemId` int(64) NOT NULL DEFAULT '0',
-  `thumbnailImage` varchar(128) NOT NULL,
-  `mediumImage` varchar(128) NOT NULL,
-  `largeImage` varchar(128) NOT NULL,
+  `thumbnailImage` varchar(256) NOT NULL,
+  `mediumImage` varchar(256) NOT NULL,
+  `largeImage` varchar(256) NOT NULL,
   `entityType` varchar(16) NOT NULL,
   PRIMARY KEY (`itemId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `image_entities` (
 CREATE TABLE IF NOT EXISTS `market_place_price` (
   `itemId` int(64) NOT NULL,
   `price` float(6,3) NOT NULL,
-  `sellerInfo` varchar(32) NOT NULL,
+  `sellerInfo` varchar(64) NOT NULL,
   `standardShipRate` float(4,2) NOT NULL,
   `twoThreeDayShippingRate` float(4,2) NOT NULL,
   `availableOnline` tinyint(1) NOT NULL,
@@ -67,10 +67,10 @@ CREATE TABLE IF NOT EXISTS `products` (
   `addToCartUrl` varchar(128) NOT NULL,
   `affiliateAddToCartUrl` varchar(128) NOT NULL,
   `offerType` varchar(64) NOT NULL,
-  `msrp` float(64,2) NOT NULL,
+  `msrp` float(6,2) NOT NULL,
   `standardShipRate` float(4,2) NOT NULL,
   `color` varchar(64) NOT NULL,
-  `customerRating` float(5,3) NOT NULL,
+  `customerRating` float(7,3) NOT NULL,
   `numReviews` int(64) NOT NULL,
   `customerRatingImage` varchar(64) NOT NULL,
   `maxItemsInOrder` int(16) NOT NULL,
