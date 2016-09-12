@@ -6,10 +6,10 @@
 
 # gift_options.mysql
 
-~ CREATE TABLE IF NOT EXISTS `gift_options` (
+~ ~ ~ CREATE TABLE IF NOT EXISTS `gift_options` (
   `itemId` int(64) NOT NULL,
   `allowGiftWrap` tinyint(1) NOT NULL,
   `allowGiftMessage` tinyint(1) NOT NULL,
   `allowGiftReceipt` tinyint(1) NOT NULL,
   PRIMARY KEY (`itemId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1; ~
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
