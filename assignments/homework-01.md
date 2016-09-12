@@ -4,4 +4,4 @@
 
 # link to my phpmyadmin page:45.55.66.199/phpmyadmin
 
-* gift_options.mysql
+** gift_options.mysql
