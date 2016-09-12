@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   `parentItemId` int(64) NOT NULL,
   `name` varchar(128) NOT NULL,
   `salePrice` float(5,2) NOT NULL,
-  `upc` int(64) NOT NULL,
+  `upc` varchar(64) NOT NULL,
   `categoryPath` varchar(64) NOT NULL,
   `shortDescription` varchar(128) NOT NULL,
   `longDescription` varchar(128) NOT NULL,
